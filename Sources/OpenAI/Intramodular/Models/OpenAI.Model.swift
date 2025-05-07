@@ -192,12 +192,15 @@ extension OpenAI.Model {
         
         /// https://openai.com/blog/new-and-improved-embedding-model/
         case text_embedding_ada_002 = "text-embedding-ada-002"
+        case text_embedding_ada_002_v2 = "text-embedding-ada-002-v2"
         case text_embedding_3_small = "text-embedding-3-small"
         case text_embedding_3_large = "text-embedding-3-large"
 
         public var dimensionCount: Int {
             switch self {
                 case .text_embedding_ada_002:
+                    return 1536
+                case .text_embedding_ada_002_v2:
                     return 1536
                 case .text_embedding_3_small:
                     return 1536
@@ -210,6 +213,8 @@ extension OpenAI.Model {
             switch self {
                 case .text_embedding_ada_002:
                     return 8192
+                case .text_embedding_ada_002_v2:
+                    return 8192
                 case .text_embedding_3_small:
                     return 8192
                 case .text_embedding_3_large:
@@ -220,6 +225,8 @@ extension OpenAI.Model {
         public init?(rawValue: String) {
             switch rawValue {
                 case Embedding.ada.rawValue:
+                    self = .ada
+                case Embedding.text_embedding_ada_002_v2.rawValue:
                     self = .ada
                 case Embedding.text_embedding_3_small.rawValue:
                     self = .text_embedding_3_small
