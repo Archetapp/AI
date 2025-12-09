@@ -1,5 +1,5 @@
 {
-  "originHash" : "24eb1da3856f86e40bb6b87db2d4707a7cf68fd47d732dcbb9ec4d0aa614626d",
+  "originHash" : "2572cb6f07a6ae0395beb608bb9286d4ef1f1dee043e4886367aa794452e4a55",
   "pins" : [
     {
       "identity" : "corepersistence",
@@ -7,7 +7,7 @@
       "location" : "https://github.com/vmanot/CorePersistence.git",
       "state" : {
         "branch" : "main",
-        "revision" : "3fc10b8e55c3be60ca4695200cecfc046c0ba29a"
+        "revision" : "2a34aac9103bc1885243f26411143069d55cfa25"
       }
     },
     {
@@ -16,7 +16,7 @@
       "location" : "https://github.com/vmanot/Merge.git",
       "state" : {
         "branch" : "master",
-        "revision" : "cfa56e9a6af4206ec9055bdb29d59def5ee16297"
+        "revision" : "1638aa70e6f3dc3d29a622bdb4699f4cd1f9b26a"
       }
     },
     {
@@ -25,7 +25,7 @@
       "location" : "https://github.com/vmanot/NetworkKit.git",
       "state" : {
         "branch" : "master",
-        "revision" : "8daa1ba22e5d18e1b8e469d5a0dd0c58b675eb87"
+        "revision" : "470af0276c2aa6e61acff22acc14c7ca30b99cbc"
       }
     },
     {
@@ -34,7 +34,16 @@
       "location" : "https://github.com/vmanot/Swallow.git",
       "state" : {
         "branch" : "master",
-        "revision" : "2ac7c7f06110bc3b397677e82d3a232980c20617"
+        "revision" : "8145fd14a4389e12eeecaf7eb614c245ebcd160c"
+      }
+    },
+    {
+      "identity" : "swift-atomics",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-atomics.git",
+      "state" : {
+        "revision" : "cd142fd2f64be2100422d658e7411e39489da985",
+        "version" : "1.2.0"
       }
     },
     {
@@ -49,10 +58,10 @@
     {
       "identity" : "swift-syntax",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/apple/swift-syntax.git",
+      "location" : "https://github.com/swift-precompiled/swift-syntax",
       "state" : {
-        "revision" : "0687f71944021d616d34d922343dcef086855920",
-        "version" : "600.0.1"
+        "branch" : "release/6.1",
+        "revision" : "fc197a24fb2e77609fbe3d94624e36f84d758099"
       }
     },
     {
@@ -70,7 +79,7 @@
       "location" : "https://github.com/SwiftUIX/SwiftUIX.git",
       "state" : {
         "branch" : "master",
-        "revision" : "2313c0890dd6a01c7a82618b9e505b1b00e5cdf7"
+        "revision" : "169e13efaae28d81a217b3a71601850cb91037ca"
       }
     }
   ],
