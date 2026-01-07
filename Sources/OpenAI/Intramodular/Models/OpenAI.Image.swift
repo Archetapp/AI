@@ -11,17 +11,20 @@ extension OpenAI {
         enum CodingKeys: String, CodingKey {
             case url
             case revisedPrompt
+            case b64Json = "b64_json"
         }
-        
+
         public let url: String?
         public let revisedPrompt: String?
-        
+        public let b64Json: String?
+
         public required init(from decoder: Decoder) throws {
             let container = try decoder.container(keyedBy: CodingKeys.self)
-                        
+
             self.url = try container.decodeIfPresent(forKey: .url)
             self.revisedPrompt = try container.decodeIfPresent(forKey: .revisedPrompt)
-            
+            self.b64Json = try container.decodeIfPresent(forKey: .b64Json)
+
             super.init(type: .image)
         }
     }
