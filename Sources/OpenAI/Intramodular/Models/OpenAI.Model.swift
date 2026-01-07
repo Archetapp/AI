@@ -267,6 +267,8 @@ extension OpenAI.Model {
         case gpt_4o_mini = "gpt-4o-mini"
         case gpt_4o_2024_08_06 = "gpt-4o-2024-08-06"
 
+        case gpt_5_mini = "gpt-5-mini"
+
         case __deprecated_gpt_4_turbo_preview = "gpt-4-turbo-preview"
 
         public var name: String {
@@ -311,6 +313,8 @@ extension OpenAI.Model {
                     return "GPT-4o mini"
                 case .gpt_4o_2024_08_06:
                     return "GPT-4o 2024-08-06"
+                case .gpt_5_mini:
+                    return "GPT-5 mini"
                 case .__deprecated_gpt_4_turbo_preview:
                     return "GPT-4 Turbo (Preview)"
             }
@@ -358,6 +362,8 @@ extension OpenAI.Model {
                 case .gpt_4o_mini:
                     return nil
                 case .gpt_4o_2024_08_06:
+                    return nil
+                case .gpt_5_mini:
                     return nil
             }
         }
